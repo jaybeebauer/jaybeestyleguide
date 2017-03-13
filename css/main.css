@@ -16,3 +16,5 @@ website: https://jaybeebauer.github.io/jaybeestyleguide/
 	Our imports
 */
 @import 'lib/nav.css';
+@import 'lib/base.css';
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');

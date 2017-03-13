@@ -3,6 +3,7 @@ Body base style
 ------------------*/
 
 body {
-  background-color: #000000;
+  background-color: #ffffff;
   color: black;
+  font-family: 'Nunito Sans', sans-serif;
 }
