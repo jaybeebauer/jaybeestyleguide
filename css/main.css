@@ -1,0 +1,18 @@
+/*-------------------
+Style Sheet for Jaybee Style Guide
+
+author: Joshua Bauer
+email: joshybee@gmail.com
+website: https://jaybeebauer.github.io/jaybeestyleguide/
+---------------------*/
+
+/*
+	Vendor imports (libs etc)
+*/
+@import 'vendor/normalize.css';
+@import 'vendor/browserupgrade.css';
+
+/*
+	Our imports
+*/
+@import 'lib/nav.css';
