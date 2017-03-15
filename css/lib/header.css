@@ -1,0 +1,17 @@
+header h1 {
+    margin: 0;
+    padding: 16px 20px;
+    background: #4C4F5D;
+    color: #E5E7E8;
+}
+
+/* -----------------------
+Wide styles
+------------------------*/
+
+@media (min-width: 670px)
+{
+	.header {
+    padding: 32px 48px;
+  }
+}

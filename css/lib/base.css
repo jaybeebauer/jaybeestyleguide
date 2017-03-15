@@ -3,7 +3,31 @@ Body base style
 ------------------*/
 
 body {
-  background-color: #ffffff;
-  color: black;
+  margin: 0;
+	padding: 0;
+	color: #333;
+	background-color: #eee;
   font-family: 'Nunito Sans', sans-serif;
+}
+
+.container
+{
+	max-width: 800px;
+	margin: 0 auto;
+	background-color: #fff;
+}
+
+main {
+  padding: 16px 20px;
+}
+
+/* -----------------------
+Wide styles
+------------------------*/
+
+@media (min-width: 670px)
+{
+	body {
+    padding: 32px 48px;
+  }
 }

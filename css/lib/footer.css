@@ -1,0 +1,13 @@
+.footer
+{
+	color: #fff;
+	background: #141723;
+	padding: 16px 20px;
+}
+
+@media (min-width: 670px)
+{
+	.footer {
+    padding: 32px 48px;
+  }
+}
