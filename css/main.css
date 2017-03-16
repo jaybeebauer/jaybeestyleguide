@@ -19,4 +19,10 @@ website: https://jaybeebauer.github.io/jaybeestyleguide/
 @import 'lib/header.css';
 @import 'lib/nav.css';
 @import 'lib/footer.css';
+@import 'lib/colour.css';
+@import 'lib/typography.css';
+@import 'lib/table.css';
+@import 'lib/form.css';
+@import 'lib/card.css';
+@import 'lib/jumbotron.css';
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans');

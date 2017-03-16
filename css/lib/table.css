@@ -1,0 +1,25 @@
+.table {
+  empty-cells: show;
+  border: 1px;
+  border-color: #4C4F5D;
+  border-style: solid;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.table__head {
+  background-color: #E5E7E8;
+}
+
+.table__item {
+  border-left: 1px;
+  border-style: solid;
+  border-color: #4C4F5D;
+  margin: 0;
+  border-width: 0 0 0 1px;
+  padding: 15px;
+}
+
+.table__foot {
+  background-color: #E5E7E8;
+}

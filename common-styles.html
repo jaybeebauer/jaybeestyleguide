@@ -12,37 +12,33 @@
 <body>
     <div class="container">
         <header>
-            <h1>Jaybee Living Style Guide</h1>
+            <h1>Common Styles</h1>
             <nav class="nav">
-                <ul>
-                    <li class="nav__link"><a href="index.html">Home</a>
-                        <li class="nav__link"><a href="prep.html">Living Style Guide Prep</a>
-                            <li class="nav__link"><a href="colour-palette.html">Colour Palette</a>
-                                <li class="nav__link nav__link--current"><a href="common-styles.html">Common Styles</a>
-                                    <li class="nav__link"><a href="components.html">Components</a>
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a>
+                        <li class="nav__item"><a href="prep.html" class="nav__link">Living Style Guide Prep</a>
+                            <li class="nav__item"><a href="colour-palette.html" class="nav__link">Colour Palette</a>
+                                <li class="nav__item nav__item--current"><a href="common-styles.html" class="nav__link">Common Styles</a>
+                                    <li class="nav__item"><a href="components.html" class="nav__link">Components</a>
                 </ul>
             </nav>
         </header>
         <main>
-            <h1>Common Styles</h1>
             <section>
                 <h2>Typography</h2>
-                <h3>Font Name Light</h3>
-                <small>Weight 300</small>
-                <h3>Font Name Regular</h3>
-                <small>Weight 400</small>
-                <h3>Font Name Bold</h3>
-                <small>Weight 700</small>
-                <h1>Header Level 1</h1>
-                <h2>Header Level 2</h2>
-                <h2>Header Level 2 Alternate</h2>
-                <h3>Header Level 3</h3>
-                <h3>Header Level 3 Alternate</h3>
-                <h4>Header Level 4</h4>
+                <h3 class="font__light">Font Name Light - weight 300</h3>
+                <h3 class="font__regular">Font Name Regular - weight 400</h3>
+                <h3 class="font__bold">Font Name Bold - weight 700</h3>
+                <h1 class="heading1">Header Level 1</h1>
+                <h2 class="heading2">Header Level 2</h2>
+                <h2 class="heading2--alt">Header Level 2 Alternate</h2>
+                <h3 class="heading3">Header Level 3</h3>
+                <h3 class="heading3--alt">Header Level 3 Alternate</h3>
+                <h4 class="heading4">Header Level 4</h4>
                 <small>This is small text</small>
                 <p>This is a paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vestibulum orci dui, in tincidunt odio tempus at.</p>
-                <a>This is a link</a>
-                <cite>Quote</cite>
+                <a href="#" class="main__link ">This is a link.</a>
+                <p><cite>This is a quote.</cite></p>
                 <ul>
                     <li>This is an unordered list
                         <li>Lorem ipsum dolor sit amet
@@ -52,59 +48,50 @@
                             </ul>
                             <li>Consectetur adipiscing elit
                 </ul>
-                <ul>
+                <ol>
                     <li>This is an ordered list
                         <li>Lorem ipsum dolor sit amet
                             <li>Quisque vestibulum orci dui
                                 <li>In tincidunt odio tempus at
                                     <li>Consectetur adipiscing elit
-                </ul>
+                </ol>
             </section>
             <section>
-                <h2>Tables</h2>
-                <table>
-                    <thead>
+                <h2 class="heading2">Tables</h2>
+                <table class="table">
+                    <thead class="table__head">
                         <tr>
-                            <th>Items</th>
-                        </tr>
-                        <tr>
-                            <th>Item Result</th>
+                            <th class="table__item">Items</th>
+                            <th class="table__item">Item Result</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody class "table__body">
                         <tr>
-                            <th>Item 1</th>
-                            <td>30</td>
+                            <td class="table__item">Item 1</td>
+                            <td class="table__item">30</td>
                         </tr>
                         <tr>
-                            <th>Item 2</th>
-                            <td>100</td>
+                            <td class="table__item">Item 2</td>
+                            <td class="table__item">100</td>
                         </tr>
                         <tr>
-                            <th>Item 3</th>
-                            <td>60</td>
+                            <td class="table__item">Item 3</td>
+                            <td class="table__item">60</td>
                         </tr>
                     </tbody>
-                    <tfoot>
+                    <tfoot class="table__foot">
                         <tr>
-                            <th>Total</th>
-                        </tr>
-                        <tr>
-                            <th>190</th>
+                            <th class="table__item">Total</th>
+                            <th class="table__item">190</th>
                         </tr>
                     </tfoot>
                 </table>
             </section>
             <section>
-                <h2>Forms</h2>
-                <h3>Button</h3>
-                <form>
-                    <fieldset>
-                        <legend>Button</legend>
-                        <button>Button</button>
-                    </fieldset>
-                </form>
-                <h3>Check Boxes with captions</h3>
+                <h2 class="heading2">Forms</h2>
+                <h3 class="heading3">Button</h3>
+                <button>Button</button>
+                <h3 class="heading3">Check Boxes with captions</h3>
                 <form>
                     <fieldset>
                         <legend>Checkboxes with captions</legend>
@@ -124,7 +111,7 @@
                         </ul>
                     </fieldset>
                 </form>
-                <h3>Radio buttons</h3>
+                <h3 class="heading3">Radio buttons</h3>
                 <form>
                     <fieldset>
                         <legend>Radios buttons</legend>
@@ -142,26 +129,26 @@
                         <small>Note about these options</small>
                     </fieldset>
                 </form>
-                <h3>Required fields</h3>
+                <h3 class="heading3">Required fields</h3>
                 <p><small>Required fields are marked <abbr title="Required">*</abbr></small></p>
-                <h3>Input field</h3>
+                <h3 class="heading3">Input field</h3>
                 <p>
                     <label for="name">First Name</label>
                     <input id="name" name="name" type="text">
                 </p>
-                <h3>Input field email</h3>
+                <h3 class="heading3">Input field email</h3>
                 <p>
                     <label for="email">Email address</label>
                     <input id="email" name="email" type="email" placeholder="you@example.com.au">
                     <small>Note about this field</small>
                 </p>
-                <h3>Input field telephone</h3>
+                <h3 class="heading3">Input field telephone</h3>
                 <p>
                     <label for="telephone">Email address</label>
                     <input id="telephone" name="telephone" type="tel">
                     <small>Note about this field</small>
                 </p>
-                <h3>Input select</h3>
+                <h3 class="heading3">Input select</h3>
                 <p>
                     <label for="state">Select your State</label>
                     <select id="state">
@@ -175,7 +162,7 @@
                	</select>
                     <small>Note about this selection</small>
                 </p>
-                <h3>Multiple select</h3>
+                <h3 class="heading3">Multiple select</h3>
                 <p>
                     <label for="option-multiple">Multiple select</label>
                     <select id="option-multiple" multiple>
@@ -185,7 +172,7 @@
                 </select>
                     <small>Note about this selection</small>
                 </p>
-                <h3>Textarea</h3>
+                <h3 class="heading3">Textarea</h3>
                 <p>
                     <label for="textarea">Textarea</label>
                     <textarea id="textarea" rows="8" cols="32"></textarea>
