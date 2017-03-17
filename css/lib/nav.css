@@ -1,55 +1,64 @@
+/*------------------
+Navigation style
+------------------*/
+
 .nav {
-  background: #141723;
-  padding: 0;
-  margin: 0;
+  background: #141723; /*Black Russian*/
+  padding: 0px;
+  margin: 0px;
 	list-style: none;
   line-height: normal;
 }
 
 .nav__list{
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
 }
 
 .nav__item {
   display: inline;
-  margin: 0;
-  color: #E5E7E8;
+  margin: 0px;
+  color: #E5E7E8; /*Pattens Blue*/
 }
 
 .nav__item--current {
-    text-decoration: none;
-    background-color: #ffffff;
-    color: #141723;
+  text-decoration: none;
+  background-color: #ffffff; /*White*/
+
 }
 
 .nav__link {
   display: block;
-  padding: 12px 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
   color: inherit;
   text-decoration: none;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px; /*Line between links on small devices*/
+  border-bottom-style: solid;
+  border-bottom-color: #E5E7E8; /*Pattens Blue*/
 }
 
 .nav__link:link,
 .nav__link:visited {
-    color: inherit;
+  color: inherit;
 }
 
 .nav__link:focus {
-  color: black;
-  background-color: #E5E7E8;
+  color: #141723; /*Black Russian*/
+  background-color: #E5E7E8; /*Pattens Blue*/
 }
 
 .nav__link:hover {
   color: inherit;
-	background-color: #243EAF;
-  color: #E5E7E8;
+	background-color: #243EAF; /*Persian Blue*/
+  color: #E5E7E8; /*Pattens Blue*/
 }
 
 .nav__link:active {
   color: inherit;
-	background-color: #E1933B;
+	background-color: #E1933B; /*Fire Bush*/
 }
 
 /* -----------------------
@@ -75,4 +84,10 @@ Wide styles
 		padding: 0;
 		border-bottom: 0;
 	}
+
+  .nav__item--current {
+    text-decoration: none;
+    background-color: #ffffff; /*White*/
+    color: #141723; /*Black Russian*/
+  }
 }

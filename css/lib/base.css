@@ -5,18 +5,19 @@ Body base style
 body {
   margin: 0;
 	padding: 0;
-	color: #333;
-	background-color: #eee;
-  font-family: 'Nunito Sans', sans-serif;
+	color: #141723; /*Black Russian*/
+	background-color: #E5E7E8; /*Pattens Blue*/
+  font-family: 'Nunito Sans', sans-serif; /*Nunito Sans from Google Fonts https://fonts.google.com*/
 }
 
-.container
-{
+/* Holds content centered taking up part of the screen */
+.container {
 	max-width: 800px;
 	margin: 0 auto;
 	background-color: #fff;
 }
 
+/* Stops content within the container from touching the sides */
 main {
   padding: 16px 20px;
 }

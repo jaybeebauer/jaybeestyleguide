@@ -1,0 +1,30 @@
+/*------------------
+Blockquote style
+------------------*/
+
+.blockquote {
+  background: #E5E7E8;
+  border-left: 10px;
+  border-top: 0px;
+  border-bottom: 0px;
+  border-right: 0px;
+  border-style: solid;
+  border-color: #4C4F5D;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  quotes: "\201C""\201D""\2018""\2019"; /*https://www.w3schools.com/cssref/pr_gen_quotes.asp*/
+}
+.blockquote:before {
+  color: #4C4F5D;
+  content: open-quote;
+  font-size: 47pt;
+  line-height: 6px;
+  margin-right: 15px;
+  vertical-align: -25px;
+}

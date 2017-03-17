@@ -25,4 +25,7 @@ website: https://jaybeebauer.github.io/jaybeestyleguide/
 @import 'lib/form.css';
 @import 'lib/card.css';
 @import 'lib/jumbotron.css';
+@import 'lib/toggle.css';
+@import 'lib/search.css';
+@import 'lib/blockquote.css';
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans');

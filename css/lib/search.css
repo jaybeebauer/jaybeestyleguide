@@ -1,0 +1,36 @@
+/*------------------
+Search bar style
+------------------*/
+
+.searchbar {
+  width: 500px;
+  margin: 50px;
+}
+
+.searchbar__box {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background: #E5E7E8;  /*Bright Grey*/
+  border: 0px;
+}
+
+.searchbar__button {
+  position: relative;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 15px;
+  padding-right: 15px;
+  left: -8px;
+  border: 2px;
+  border-style: solid;
+  border-color: #E1933B; /*Fire Bush*/
+  background-color: #E1933B; /*Fire Bush*/
+  color: white;
+}
+
+.searchbar__button:hover  {
+  background-color: #243EAF; /*Persian Blue*/
+  border-color: #243EAF; /*Persian Blue*/
+}

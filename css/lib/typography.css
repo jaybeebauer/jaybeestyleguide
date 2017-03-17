@@ -1,6 +1,6 @@
-.font {
-
-}
+/*------------------
+Font style
+------------------*/
 
 .font__light {
   font-weight: 300;
@@ -17,28 +17,28 @@
 .heading1 {
   margin: 0;
   padding: 16px 20px;
-  background: #4C4F5D;
-  color: #E5E7E8;
+  background: #4C4F5D; /*Bright Grey*/
+  color: #E5E7E8; /*Pattens Blue*/
 }
 
 .heading2 {
   border-bottom: 2px;
   border-bottom-style: solid;
-  border-color: #E1933B;
+  border-color: #E1933B; /*Fire Bush*/
   padding-bottom: 10px;
 }
 
 .heading2--alt {
   border-bottom: 2px;
   border-bottom-style: solid;
-  border-color: #141723;
+  border-color: #141723; /*Black Russian*/
   padding-bottom: 10px;
 }
 
 .heading3 {
   border-bottom: 1px;
   border-bottom-style: solid;
-  border-color: #4C4F5D;
+  border-color: #4C4F5D; /*Bright Grey*/
   padding-bottom: 10px;
   width: 70%;
 }
@@ -49,7 +49,7 @@
 
 .main__link:link,
 .main__link:visited {
-    color: #E1933B;
+    color: #E1933B; /*Fire Bush*/
     text-decoration: none;
 }
 
@@ -58,9 +58,9 @@
 }
 
 .main__link:hover {
-  color: #4C4F5D;
+  color: #4C4F5D; /*Bright Grey*/
 }
 
 .main__link:active {
-	color: #4C4F5D;
+	color: #4C4F5D; /*Bright Grey*/
 }

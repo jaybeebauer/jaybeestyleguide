@@ -12,7 +12,7 @@
 <body>
     <div class="container">
         <header>
-            <h1>Components</h1>
+            <h1 class="header__text">Components</h1>
             <nav class="nav">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="index.html" class="nav__link">Home</a>
@@ -26,9 +26,10 @@
         <main>
             <section>
                 <h2 class="heading2">Content Cards</h2>
+                <small>Pictures from <a href="http://www.webdesignerdepot.com/2013/12/free-download-royalty-free-stock-images-from-picjumbo/" class="main__link">http://www.webdesignerdepot.com/2013/12/free-download-royalty-free-stock-images-from-picjumbo/</a></small>
                 <div class="card__grid">
                     <article class="card">
-                        <img src "#" alt="img" class="card__image">
+                        <img src="images/image1.jpg" alt="Tree in a field" class="card__image">
                         <div class="card__text">
                             <h2 class="card__title">This is a card</h2>
                             <p>orem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -38,7 +39,7 @@
                         </footer>
                     </article>
                     <article class="card">
-                        <img src "#" alt="img" class="card__image">
+                        <img src="images/image2.jpg" alt="Snow covered mountains" class="card__image">
                         <div class="card__text">
                             <h2 class="card__title">This is a card</h2>
                             <p>orem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -48,6 +49,7 @@
                         </footer>
                     </article>
                 </div>
+
             </section>
             <section>
                 <h2 class="heading2">Jumbotron</h2>
@@ -58,23 +60,33 @@
                 </div>
             </section>
             <section>
-                <h2 class="heading2">Another Component</h2>
+                <h2 class="heading2">Toggle Switch</h2>
+                <div class="switch">
+                    <input class="switch__trigger" type="checkbox">
+                    <div class="switch__slider"></div>
+                </div>
             </section>
-
-
-
+            <section>
+                <h2 class="heading2">Search Box</h2>
+                <form class="searchbar">
+                    <input type="text" placeholder="Search..." required class="searchbar__box">
+                    <button class="searchbar__button">Search</button>
+                </form>
+            </section>
+            <section>
+                <h2 class="heading2">Blockquote</h2>
+                <blockquote class="blockquote">Here we'll put something interesting, when used in text it will quote out of the text and the paragraph will continue underneath!</blockquote>
+            </section>
         </main>
         <footer class="footer">
-            <address>
-        <span>
-          <strong><a href="https://jaybeebauer.github.io/jaybeestyleguide/">Joshua Bauer</a></strong>
+            <div class="footer__text">
+                <a href="https://jaybeebauer.github.io/jaybeestyleguide/" class="main__link">Joshua Bauer</a>
+                <small>Copyright &copy; <time datetime="2017">2017</time></small>
+            </div>
+            <div class="footer__logo">
+                <img src="images/cdu-masterlogo-2.png" alt="Charles Darwin University" />
+            </div>
 
-          <span>Charles Darwin University</span>
-        </span>
-
-        <img src="http://www.cdu.edu.au/sites/default/files/cdu-masterlogo-2.png" alt="Charles Darwin University"/>
-      </address>
-            <small>Copyright &copy; <time datetime="2017">2017</time></small>
         </footer>
     </div>
 </body>

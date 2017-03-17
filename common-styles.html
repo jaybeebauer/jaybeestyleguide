@@ -12,7 +12,7 @@
 <body>
     <div class="container">
         <header>
-            <h1>Common Styles</h1>
+            <h1 class="header__text">Common Styles</h1>
             <nav class="nav">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="index.html" class="nav__link">Home</a>
@@ -65,7 +65,7 @@
                             <th class="table__item">Item Result</th>
                         </tr>
                     </thead>
-                    <tbody class "table__body">
+                    <tbody class="table__body">
                         <tr>
                             <td class="table__item">Item 1</td>
                             <td class="table__item">30</td>
@@ -90,23 +90,23 @@
             <section>
                 <h2 class="heading2">Forms</h2>
                 <h3 class="heading3">Button</h3>
-                <button>Button</button>
-                <h3 class="heading3">Check Boxes with captions</h3>
+                <button class="button__link">Button</button>
+                <h3 class="heading3">Check Boxes</h3>
                 <form>
                     <fieldset>
-                        <legend>Checkboxes with captions</legend>
-                        <ul>
+                        <legend>Checkboxes</legend>
+                        <ul class="checkbox__list">
                             <li>
-                                <label for="checkbox1"><input id="checkbox1" name="checkbox" type="checkbox" checked> Choice A</label>
-                                <small>Note about this option</small>
+                                <input id="checkbox1" name="checkbox" type="checkbox" checked>
+                                <label for="checkbox1">Choice A</label>
                             </li>
                             <li>
-                                <label for="checkbox2"><input id="checkbox2" name="checkbox" type="checkbox"> Choice B</label>
-                                <small>Note about this option</small>
+                                <input id="checkbox2" name="checkbox" type="checkbox">
+                                <label for="checkbox2">Choice B</label>
                             </li>
                             <li>
-                                <label for="checkbox3"><input id="checkbox3" name="checkbox" type="checkbox"> Choice C</label>
-                                <small>Note about this option</small>
+                                <input id="checkbox3" name="checkbox" type="checkbox">
+                                <label for="checkbox3">Choice C</label>
                             </li>
                         </ul>
                     </fieldset>
@@ -115,22 +115,24 @@
                 <form>
                     <fieldset>
                         <legend>Radios buttons</legend>
-                        <ul>
+                        <ul class="radiobutton__list">
                             <li>
-                                <label for="radio1"><input id="radio1" name="radio" type="radio" checked> Option 1</label>
+                                <input id="radio1" name="radio" type="radio" checked>
+                                <label for="radio1">Option 1</label>
                             </li>
                             <li>
-                                <label for="radio2"><input id="radio2" name="radio" type="radio"> Option 2</label>
+                                <input id="radio2" name="radio" type="radio">
+                                <label for="radio2">Option 2</label>
                             </li>
                             <li>
-                                <label for="radio3"><input id="radio3" name="radio" type="radio"> Option 3</label>
+                                <input id="radio3" name="radio" type="radio">
+                                <label for="radio3">Option 3</label>
                             </li>
                         </ul>
-                        <small>Note about these options</small>
                     </fieldset>
                 </form>
                 <h3 class="heading3">Required fields</h3>
-                <p><small>Required fields are marked <abbr title="Required">*</abbr></small></p>
+                <p><small>Required fields are marked <abbr title="Required" class="required__field">*</abbr></small></p>
                 <h3 class="heading3">Input field</h3>
                 <p>
                     <label for="name">First Name</label>
@@ -181,16 +183,14 @@
             </section>
         </main>
         <footer class="footer">
-            <address>
-        <span>
-          <strong><a href="https://jaybeebauer.github.io/jaybeestyleguide/">Joshua Bauer</a></strong>
+            <div class="footer__text">
+                <a href="https://jaybeebauer.github.io/jaybeestyleguide/" class="main__link">Joshua Bauer</a>
+                <small>Copyright &copy; <time datetime="2017">2017</time></small>
+            </div>
+            <div class="footer__logo">
+                <img src="images/cdu-masterlogo-2.png" alt="Charles Darwin University" />
+            </div>
 
-          <span>Charles Darwin University</span>
-        </span>
-
-        <img src="http://www.cdu.edu.au/sites/default/files/cdu-masterlogo-2.png" alt="Charles Darwin University"/>
-      </address>
-            <small>Copyright &copy; <time datetime="2017">2017</time></small>
         </footer>
     </div>
 </body>

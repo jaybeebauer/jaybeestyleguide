@@ -1,0 +1,55 @@
+/*------------------
+Toggle Switch style
+------------------*/
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch__trigger {display:none;}
+
+/* The slider */
+.switch__slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: #4C4F5D; /*Bright Grey*/
+  -webkit-transition: .4s; /*Confirm tranistion on Safari and Chrome*/
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.switch__slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s; /*Confirm tranistion on Safari and Chrome*/
+  transition: .4s;
+  border-radius: 50%;
+}
+
+.switch__trigger:checked + .switch__slider {
+  background-color: #E1933B; /*Fire Bush*/
+}
+
+.switch__trigger:focus + .switch__slider {
+  box-shadow: 0 0 1px #E1933B; /*Fire Bush*/
+}
+
+.switch__trigger:checked + .switch__slider:before {
+  -webkit-transform: translateX(26px); /*Confirm transform on Safari and Chrome*/
+  -ms-transform: translateX(26px); /*Confirm transform on IE*/
+  transform: translateX(26px); /*others*/
+}

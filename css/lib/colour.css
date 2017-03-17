@@ -1,3 +1,7 @@
+/*------------------
+Colour Palette Styles
+------------------*/
+
 .palette {
   display: inline-block;
   margin-bottom: 30px;
@@ -14,20 +18,22 @@
   padding-left: 90px;
 }
 
+/*Creates the square before hex code*/
 .palette__item::before {
   content: " ";
   position: absolute;
   display: block;
-  top: 0;
-  left: 0;
+  top: 0px;
+  left: 0px;
   float: left;
   width: 70px;
   height: 70px;
   border-radius: 6px;
 }
 
+/*Changes square colour*/
 .colour__patterns-blue::before {
-  background-color: #E5E7E8;
+  background-color: #E5E7E8; 
 }
 
 .colour__black-russian::before {
