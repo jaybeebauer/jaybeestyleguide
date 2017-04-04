@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Jaybee Living Style Guide</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div class="container fontcolour">
+    <header>
+      <h1 class="header__text">Accessibility and Personaliation</h1>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html" class="nav__link">Home</a>
+            <li class="nav__item"><a href="prep.html" class="nav__link">Living Style Guide Prep</a>
+              <li class="nav__item"><a href="colour-palette.html" class="nav__link">Colour Palette</a>
+                <li class="nav__item"><a href="common-styles.html" class="nav__link">Common Styles</a>
+                  <li class="nav__item"><a href="components.html" class="nav__link">Components</a>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2 class="heading2">Change website options</h2>
+        <p>This form allows you to change and remember accessibility and personalisation options on this website</p>
+        <p>Currently these options allow you to:</p>
+        <ul>
+          <li>Enter your name and email
+            <li>Invert all colours across the website
+              <li>Change font colour
+                <li>Change the font
+                  <li>Remember all of the above across visits
+        </ul>
+        <p>The above is important namely to allow users to feel welcome and personalise the website as well as being accessable to those unable to read because of the colours or because of the font.</p>
+      </section>
+      <form id="form">
+        <fieldset class="form__fieldset">
+          <legend class="form__legand">User Details</legend>
+          <div class="form__textfield">
+            <label for="name">Name:</label>
+            <input id="name" name="name" type="text">
+          </div>
+          <div class="form__textfield">
+            <label for="email">Email:</label>
+            <input id="email" name="email" type="email">
+          </div>
+        </fieldset>
+        <fieldset class="form__fieldset">
+          <legend class="form__legand">Default, Inverted Colours</legend>
+          <ul class="radiobutton__list">
+            <li>
+              <input id="false" name="invertcolour" type="radio" value="false" checked>
+              <label for="false">Default</label>
+            </li>
+            <li>
+              <input id="true" name="invertcolour" type="radio" value="true">
+              <label for="true">Inverted Colours</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form__fieldset">
+          <legend class="form__legand">Font Colour</legend>
+          <label for="fontcolour">Hex Code Font Colour:</label>
+          <input id="fontcolour" name="fontcolour" type="text" value="#141723">
+        </fieldset>
+        <fieldset class="form__fieldset">
+          <legend class="form__legand">Font Selection</legend>
+          <ul class="radiobutton__list">
+            <li>
+              <input id="nunitosans" name="font" type="radio" value="nunitosans" checked>
+              <label for="nunitosans">Nunito Sans</label>
+            </li>
+            <li>
+              <input id="opensans" name="font" type="radio" value="opensans">
+              <label for="opensans">Open Sans</label>
+            </li>
+            <li>
+              <input id="roboto" name="font" type="radio" value="roboto">
+              <label for="roboto">Roboto</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button id="save" class="button__link">Save</button>
+        <button id="resetdatabase" class="button__link">Clear Website Settings</button>
+      </form>
+    </main>
+    <footer class="footer">
+      <div class="footer__text">
+        <a href="https://jaybeebauer.github.io/jaybeestyleguide/" class="main__link">Joshua Bauer</a>
+        <small>Copyright &copy; <time datetime="2017">2017</time></small>
+      </div>
+      <div class="footer__logo">
+        <img src="images/cdu-masterlogo-2.png" alt="Charles Darwin University" />
+      </div>
+
+    </footer>
+  </div>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

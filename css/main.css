@@ -28,4 +28,5 @@ website: https://jaybeebauer.github.io/jaybeestyleguide/
 @import 'lib/toggle.css';
 @import 'lib/search.css';
 @import 'lib/blockquote.css';
-@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
+@import 'lib/accessibility.css';
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans|Open+Sans|Roboto');

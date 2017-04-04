@@ -1,4 +1,28 @@
 /*------------------
+Form styles
+------------------*/
+
+.form {
+
+}
+
+.form__fieldset {
+  margin-bottom: 20px;
+}
+
+.form__legand {
+  font-weight: 700;
+}
+
+.form__textfield{
+  margin-bottom: 30px;
+}
+
+.form__textfield:last-child{
+  margin-bottom: 0px;
+}
+
+/*------------------
 Button styles
 ------------------*/
 
@@ -14,6 +38,7 @@ Button styles
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  cursor: pointer;
 }
 
 .button__link:hover,

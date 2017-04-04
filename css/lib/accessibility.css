@@ -1,0 +1,23 @@
+/*------------------
+Accessibility Options
+------------------*/
+
+/*Inverts all colours for Chrome/Safari/Firefox and IE*/
+.invert {
+  -webkit-filter: invert(100%);
+  -moz-filter: invert(100%);
+  -o-filter: invert(100%);
+  -ms-filter: invert(100%);
+}
+
+.opensans {
+  font-family: 'Open Sans', sans-serif; /*Override font*/
+}
+
+.roboto {
+  font-family: 'Roboto', sans-serif; /*Override font*/
+}
+
+.fontcolour {
+  /*Place holder for user colour change*/
+}
