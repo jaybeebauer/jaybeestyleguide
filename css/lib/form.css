@@ -73,3 +73,26 @@ Required Field styles
 .required__field {
   color: red;
 }
+
+@media (max-width: 480px){
+  /*Make things a bit bigger on phones*/
+  input[type=text], input[type=email] { /*http://www.webdesignerdepot.com/2013/03/how-to-make-your-contact-forms-mobile-friendly/*/
+    -webkit-appearance: none; /*Fixes rendering problem on iPhone where uses Mac's default buttons*/
+    -moz-appearance: none; /*Same for firefox*/
+    width: 100%;
+    line-height: 40px;
+    font-size: 20px;
+    border: 1px;
+    border-style: solid;
+    border-color: #bbb;
+  }
+
+  .radiobutton__list label {
+    font-size: 20px;
+  }
+
+  .button__link { /*Make the buttons look neater by streching across the whole form*/
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
