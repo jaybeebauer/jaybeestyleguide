@@ -68,7 +68,8 @@ Wide styles
 @media (min-width: 800px)
 {
   .nav__list {
-    margin-left: 90px;
+    margin-left: 0 auto;
+    text-align: center;
 	}
 
 	.nav__item {
