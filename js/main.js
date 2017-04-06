@@ -62,53 +62,48 @@
             saveBtn.addEventListener('click', storeFormData);
             resetBtn.addEventListener('click', resetDatabaseData);
             nameField.addEventListener('blur', function() { //blur event lisenter https://www.w3schools.com/jsref/event_onblur.asp
-              if (this.value == null || this.value == "") {
-                fieldError(this, "Please enter a name");
-              }
-              else {
-                fieldSuccess(this);
-              }
+                if (this.value == null || this.value == "") {
+                    fieldError(this, "Please enter a name");
+                } else {
+                    fieldSuccess(this);
+                }
             });
             emailField.addEventListener('blur', function() {
-              if (this.value == null || this.value == "") {
-                  fieldError(this, "Please enter an email address");
-              } else {
-                  if (!validEmail(this.value)) {
-                      fieldError(this, "Please enter a valid email address");
-                  }
-                  else {
-                    fieldSuccess(this);
-                  }
-              }
+                if (this.value == null || this.value == "") {
+                    fieldError(this, "Please enter an email address");
+                } else {
+                    if (!validEmail(this.value)) {
+                        fieldError(this, "Please enter a valid email address");
+                    } else {
+                        fieldSuccess(this);
+                    }
+                }
 
             });
             hexField.addEventListener('blur', function() {
-              if (this.value == null || this.value == "") {
-                  fieldError(this, "Please enter a hex font colour");
-              } else {
-                  if (!validHexColour(this.value)) {
-                      fieldError(this, "Please enter a valid hex colour");
-                  }
-                  else {
-                    fieldSuccess(this);
-                  }
-              }
+                if (this.value == null || this.value == "") {
+                    fieldError(this, "Please enter a hex font colour");
+                } else {
+                    if (!validHexColour(this.value)) {
+                        fieldError(this, "Please enter a valid hex colour");
+                    } else {
+                        fieldSuccess(this);
+                    }
+                }
             });
-
-
         }
     }
 
-    function fieldError(obj, errortext){
-      obj.nextSibling.nextSibling.setAttribute('class', 'form__fielderror'); //https://developer.mozilla.org/en-US/docs/Web/API/Node/nextSibling
-      obj.nextSibling.nextSibling.innerHTML = errortext;
-      obj.style.borderColor = 'red';
+    function fieldError(obj, errortext) {
+        obj.nextSibling.nextSibling.setAttribute('class', 'form__fielderror'); //https://developer.mozilla.org/en-US/docs/Web/API/Node/nextSibling
+        obj.nextSibling.nextSibling.innerHTML = errortext;
+        obj.style.borderColor = 'red';
     }
 
-    function fieldSuccess(obj){
-      obj.nextSibling.nextSibling.setAttribute('class', '');
-      obj.nextSibling.nextSibling.innerHTML = "";
-      obj.style.borderColor = '';
+    function fieldSuccess(obj) {
+        obj.nextSibling.nextSibling.setAttribute('class', '');
+        obj.nextSibling.nextSibling.innerHTML = "";
+        obj.style.borderColor = '';
     }
 
     function storeFormData(event) {
@@ -231,5 +226,4 @@
         var reg = /^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$/;
         return reg.test(colour);
     }
-
 })();
