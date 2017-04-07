@@ -134,6 +134,9 @@
                 document.querySelector('body').classList.add(form.uFont);
             }
         }
+        else {
+          alert("Please correct the errors on the form");
+        }
     }
 
     //Function to validate form data idea for operators from https://www.w3schools.com/js/js_comparisons.asp
